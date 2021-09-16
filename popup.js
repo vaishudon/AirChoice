@@ -295,27 +295,27 @@ function findAirQualImageSrc(airQual, newCard) {
     if (integer <= 50) {
         newCard.style.backgroundColor = '#8acea7';
         newCard.style.borderColor = '#0B9444';
-        return "green.png";
+        return "./images/green.png";
     } else if (integer <= 100) {
         newCard.style.backgroundColor = '#ecdf7c';
         newCard.style.borderColor = '#FFDE16';
-        return "yellow.png";
+        return "./images/yellow.png";
     } else if (integer <= 150) {
         newCard.style.backgroundColor = '#fcc37e';
         newCard.style.borderColor = '#F7941E';
-        return "orange.png"
+        return "./images/orange.png"
     } else if (integer <= 200) {
         newCard.style.backgroundColor = '#ee8e91';
         newCard.style.borderColor = '#ED1C24';
-        return "red.png";
+        return "./images/red.png";
     } else if (integer <= 300) {
         newCard.style.backgroundColor = '#c0abda';
         newCard.style.borderColor = '#773CBE';
-        return "purple.png"
+        return "./images/purple.png"
     }
     newCard.style.backgroundColor = '#f0939c';
     newCard.style.borderColor = '#BF1E2E';
-    return "maroon.png"
+    return "./images/maroon.png"
 
 }
 function handleCardClick(cityName, airQual) {
