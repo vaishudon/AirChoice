@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Air Choice</title>
+
+    <script type="module" src="popup.js"></script>
+    <link rel="stylesheet" href="popup.css">
+
+
+    <script src="place-search.js"></script>
+    <link rel="stylesheet" href="place-search.css">
+
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Air Choice</h1>
+        <img src="wind (3).png" class="logoImage" alt="Logo">
+    </div>
+
+    <div id="airQuality"></div>
+    <div id="chosenAirQualList"></div>
+    <input type="search" id="place-search-input" placeholder="Start Searching..." />
+    <div class="container" id="EXAMPLE CITY, STATE">
+        <details class="content">
+            <summary>
+                <div class="summary">
+                    <div class="summaryInfo">
+                        <h3 class="city">Testing city</h3>
+                        <div class="airQuality">Testing air quality</div>
+                    </div>
+                        <img src="maroon.png" class="airQualImage" alt="good">
+                </div>
+            </summary>
+            <p class>
+            <div class="expandedContent">
+                <div class="expandedContentInner">
+                    <div>CO</div>
+                    <div>3.3</div>
+                </div>
+                <div class="expandedContentInner">
+                    <div>H</div>
+                    <div>2.3</div>
+                </div>
+                <div class="expandedContentInner">
+                    <div>Sm</div>
+                    <div>9</div>
+                </div>
+            </div>
+
+
+            </p>
+            <!-- <h3 class="city">Testing city</h3>
+                <div class= "airQuality">Testing air quality</div>
+                <div class = "expandedContent">NEW addition</div> -->
+        </details>
+    </div>
+
+    <div id="list"></div>
+</body>
+
+</html>

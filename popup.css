@@ -1,0 +1,119 @@
+.heading{
+    margin-top: 1em;
+    margin-left:0.5em;
+    margin-bottom: 1em;
+
+}
+h1{
+    color: #f0f0f0;
+    text-align: left;
+    display: inline-block;
+    margin-left: 0.5em;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+.content{
+    margin-top: 0;
+}
+.logoImage{
+    float: left;  
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+body {
+    min-width:300px;
+    min-height:600px;
+    background-color: white;
+}
+.container{
+    background-color: #f0939c ;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #BF1E2E;
+    border-width: 0.2em;
+    margin-bottom: 0.2em;
+    margin-top: 0.4em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 290px;
+}
+.container:hover{
+    transform: perspective(1px) translateZ(0);
+    transform: scale(0.95);
+}
+.container:active{
+    transition: background-color 0.2s ease;
+    background-color: #b6b6b6;
+    border-color: #b6b6b6; 
+}
+.city{
+    color: rgb(63, 62, 62);
+    /* padding-top: 1.2em; */
+    padding-left: 1.2em;
+
+    
+}
+.airQuality{
+    color: rgb(63, 62, 62);
+    font-weight:500;
+    padding-left: 1.3em;
+    padding-bottom: 1.2em;
+    font-size: 15px;
+
+}
+.expandedContent{
+    /* color: rgb(49, 1, 49); */
+    padding-left: 1.3em;
+    display: flex;
+    flex-direction: row;
+}
+.expandedContentInner{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.3em;
+}
+summary{
+    margin-top: 0;
+}
+.summary{
+    display: flex;
+    flex-direction: row;
+}
+.summaryInfo{
+    width: 130px;
+    /* height: 110px; */
+
+}
+.airQualImage{
+    transform: scale(0.5);
+    margin-top: 0;
+    position: relative;
+    top: -12px;
+    right: -50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+details>summary {
+    list-style-type: none;
+    outline: none;
+    cursor: pointer;
+    /* border: 1px solid #eee; */
+    /* padding: 5px; */
+    /* border-radius: 5px; */
+  }
+details>summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  /* details>summary::before {
+    content: '+ ';
+  }
+  
+  details[open]>summary::before {
+    content: '- ';
+  } */
+  
+  details[open]>summary {
+    margin-bottom: 0.5rem;
+  }

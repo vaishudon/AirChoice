@@ -1,0 +1,25 @@
+{
+    "manifest_version":2,
+
+    "name": "Air Choice",
+    "description": "Explore the Air Quality at different places around the world! Our planet has changed a lot, hasn't it?",
+    "version": "1.0",
+
+    "browser_action": {
+        "default_icon": "wind.png",
+        "default_popup": "popup.html"
+    },
+    
+    "permissions": [
+        "activeTab",
+        "http://api.openweathermap.org/data/2.5/*", 
+        "geolocation",
+        "https://api.waqi.info//feed/*"
+    ], 
+
+    "icons": { 
+        "16": "wind.png",
+       "128": "wind (1).png" 
+    }
+
+}

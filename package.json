@@ -1,0 +1,17 @@
+{
+  "name": "AirChoice",
+  "version": "1.0.0",
+  "main": "popup.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0"
+  }
+}
