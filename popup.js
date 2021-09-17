@@ -6,10 +6,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     navigator.geolocation.getCurrentPosition(position => {
         const { latitude, longitude } = position.coords;
-        const airQualityAPILink = 'http://api.openweathermap.org/data/2.5/air_pollution?lat=' + latitude + '&lon=' + longitude + '&appid=c908fb595ac1a4997634ec6fced7f69e'
-        const getCityAPILink = 'https://www.mapquestapi.com/geocoding/v1/reverse?key=RxnLxrtLi5Mch5HbXwlAHKZCtWs7QZv9&location=' + latitude + '%2C' + longitude + '&outFormat=json&thumbMaps=false';
+        const airQualityAPILink = 'http://api.openweathermap.org/data/2.5/air_pollution?lat=' + latitude + '&lon=' + longitude + '&appid=ID'
+        const getCityAPILink = 'https://www.mapquestapi.com/geocoding/v1/reverse?key=ID&location=' + latitude + '%2C' + longitude + '&outFormat=json&thumbMaps=false';
 
-        //console.log(latitude + " " + longitude);
         // getting city from coordinates
         fetch(getCityAPILink).then(r => r.text()).then(result => {
             let addressJSON = JSON.parse([result])
@@ -20,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // search for cities
         let ps = placeSearch({
-            key: 'RxnLxrtLi5Mch5HbXwlAHKZCtWs7QZv9',
+            key: 'ID',
             container: document.querySelector('#place-search-input'),
             limit: 15
         });
@@ -72,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
         })
 
         // possible hisotrical data
-        //     let link2 = 'https://www.airnowapi.org/aq/observation/latLong/historical?format=application/json&latitude=' + latitude+'&longitude='+ longitude+ '&date=2000-09-07T00-0000&distance=200&API_KEY=59FA0B7D-4B8F-486F-9916-630FDF8D9CEF';
+        //     let link2 = 'https://www.airnowapi.org/aq/observation/latLong/historical?format=application/json&latitude=' + latitude+'&longitude='+ longitude+ '&date=2000-09-07T00-0000&distance=200&API_KEY=ID';
 
         //     fetch(link2).then(r => r.text()).then(result => {
         //         // let airQual = JSON.parse([result]).data.aqi;
@@ -84,25 +83,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         //}
 
-        // fetch('https://parseapi.back4app.com/classes/City?limit=2&keys=name,country,location',
-        // {
-        //   headers: {
-        //     'X-Parse-Application-Id': 'mxsebv4KoWIGkRntXwyzg6c6DhKWQuit8Ry9sHja', // This is the fake app's application id
-        //     'X-Parse-Master-Key': 'TpO0j3lG2PmEVMXlKYQACoOXKQrL3lwM0HwR9dbH', // This is the fake app's readonly master key
-        //   }
-        // }).then(r => r.text()).then(result =>{
-        //     console.log(result)
-        // })
+        
 
-        // fetch('https://wft-geo-db.p.rapidapi.com/GET/v1/geo/cities?limit=5&offset=0&location=47.83005-122.185839').then(r => r.text()).then(result =>{
-
-        //     console.log('HELLO '+ result)
-        // })
-
-        // placeSearch({
-        //     key: 'RxnLxrtLi5Mch5HbXwlAHKZCtWs7QZv9',
-        //     container: document.querySelector('#place-search-input')
-        // });
 
     });
 
@@ -110,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     //checkPageButon.addEventListener('click', function(){
 
-    // const response = axios.get('http://api.openweathermap.org/data/2.5/air_pollution?lat=50&lon=50&appid=c908fb595ac1a4997634ec6fced7f69e');
+    // const response = axios.get('http://api.openweathermap.org/data/2.5/air_pollution?lat=50&lon=50&appid=ID');
     // console.log(response.list.dt)
 
     //     chrome.tabs.getSelected(null, function(tab){
